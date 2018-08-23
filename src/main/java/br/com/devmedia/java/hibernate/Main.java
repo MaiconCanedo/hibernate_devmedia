@@ -15,12 +15,11 @@ public class Main {
 
         try {
             entityManager.getTransaction().begin();
-
             entityManager.persist(lembrete);
-
             entityManager.getTransaction().commit();
         } catch (Exception e) {
             entityManager.getTransaction().rollback();
+            e.printStackTrace();
         } finally {
             entityManager.close();
         }

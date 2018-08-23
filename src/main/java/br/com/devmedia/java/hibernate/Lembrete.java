@@ -15,7 +15,6 @@ public class Lembrete {
     @Column(nullable =  false)
     private String titulo;
 
-    @ColumnDefault(value = "")
     @Column(nullable = false)
     private String descricao;
 
