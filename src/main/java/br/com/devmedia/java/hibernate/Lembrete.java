@@ -1,7 +1,5 @@
 package br.com.devmedia.java.hibernate;
 
-import org.hibernate.annotations.ColumnDefault;
-
 import javax.persistence.*;
 import java.util.Objects;
 
@@ -24,6 +22,10 @@ public class Lembrete {
     public Lembrete(String titulo, String descricao) {
         this.titulo = titulo;
         this.descricao = descricao;
+    }
+
+    public Lembrete(long id) {
+        this.id = id;
     }
 
     //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
